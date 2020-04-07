@@ -25,42 +25,78 @@
 		</dependency>
   
   
-  <!-- SPRING -->
-  <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>${spring.version}</version>
-   
-</dependency>
   
   
-  <!-- JSTL -->
-<dependency>
-	<groupId>jstl</groupId>
-	<artifactId>jstl</artifactId>
-	<version>1.2</version>
-	<scope>provided</scope>
-      
-</dependency>
-
-
-<!-- standard jar -->
-<!-- https://mvnrepository.com/artifact/taglibs/standard -->
-<dependency>
-    <groupId>taglibs</groupId>
-    <artifactId>standard</artifactId>
-    <version>1.1.2</version>
-  </dependency>
   
+ 
+  
+  <!-- JUNIT -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.12</version>
+            
+        </dependency>
+    
+    
+    <!-- Spring -->
+		
+	
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>${spring.version}</version>
+    
+</dependency>
+
+
+
+    
+    <!-- standard jar -->
+  
+<!-- https://mvnrepository.com/artifact/taglibs/standard -->
+  <dependency>
+    <groupId>taglibs</groupId>
+    <artifactId>standard</artifactId>
+    <version>1.1.2</version>
+  </dependency>
+    
+     <!-- JSTL -->
+
+  <dependency>
+    <groupId>javax.servlet.jsp.jstl</groupId>
+    <artifactId>jstl-api</artifactId>
+    <version>1.2</version>
+</dependency>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.2</version>
+    <scope>provided</scope>
+</dependency>
+
+    
+    
+    
   </dependencies>
+    
+  
   <build>
   <plugins>
+  
   
 	<!--  update to latest java version -->
 	<plugin>
