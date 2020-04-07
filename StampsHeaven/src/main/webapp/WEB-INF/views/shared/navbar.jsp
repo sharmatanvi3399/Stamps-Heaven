@@ -16,10 +16,11 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="  ${contextRoot}/about">About</a>
-                    </li>
-                    <li><a href="  ${contextRoot}/listStamps">View Stamps</a>
-                    </li>
+                   
                     <li><a href="  ${contextRoot}/contact">Contact</a>
+                    </li>
+                    
+                    <li><a href="  ${contextRoot}/show/all/stamps" >View Stamps</a>
                     </li>
                 </ul>
             </div>

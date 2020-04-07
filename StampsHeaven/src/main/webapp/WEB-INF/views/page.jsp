@@ -49,12 +49,14 @@
 			<c:if test="${userClickHome == true}">
 				<%@include file="home.jsp"%>
 			</c:if>
+			
 
 			<!-- Loaded when user clicks about -->
 
 			<c:if test="${userClickAbout == true}">
 				<%@include file="about.jsp"%>
 			</c:if>
+			
 
 
 			<!-- Loaded when user clicks contact -->
@@ -62,8 +64,10 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
-			<!-- Loaded when user clicks contact -->
-
+			<!-- Loaded when user clicks  all stamps -->
+<c:if test="${userClickAllStamps == true or   userClickCategoryStamps == true }">
+				<%@include file="listStamps.jsp" %>
+			</c:if>
 			
 		</div>
 
